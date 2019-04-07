@@ -295,3 +295,11 @@ nav a.button-collapse {
 .parallax-container {
     max-height: 400px;
 }
+
+.grey-text.text-lighten-3 {
+    transition: all 150ms;
+}
+
+.grey-text.text-lighten-3:hover {
+    transform: translateY(-1px);
+}
