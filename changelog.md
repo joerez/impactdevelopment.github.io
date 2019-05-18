@@ -9,10 +9,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) ~
 - Added new "Fill" option to Shader ESP with an opacity suboption.
 
 ### Changed
+- Made module category and name changes described in [#1103](https://github.com/ImpactDevelopment/ImpactClient/issues/1103)
+- Renamed "Rainbow Enchant" to "Enchant Color", with the support of making the enchant glint any color.
 
 ### Fixed
-- Fixed ClickGUI scrolling not working on some systems [#1061](https://github.com/ImpactDevelopment/ImpactClient/issues/1061)
 - Fixed ESP Shader mode not rendering Phantoms with the right color, caused by their eye layer.
+- Fixed thread unsafe operation in Chest Stealer that could result in a game crash
 
 ## 4.6
 
@@ -75,6 +77,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) ~
 
 ### Removed
 - Removed Screenshot Uploader
+
+### Hotfixes
+- Fixed a crash when launching on Linux due to a misconfigured obfuscator
+- Fixed a crash due to a 1.13 block rename in Auto Mine
+- Fixed entries in ClickGUI showing up in incorrect order due to a misconfigured obfuscator
+- Fixed capes rendering at incorrect resolution ([#1060](https://github.com/ImpactDevelopment/ImpactClient/issues/1060))
+- Fixed incorrect version displaying in the HUD ([#1069](https://github.com/ImpactDevelopment/ImpactClient/issues/1069))
+- Fixed a crash on toggling Impact cape ([#1057](https://github.com/ImpactDevelopment/ImpactClient/issues/1057))
+- Fixed mob targeting in 1.13 relating to Phantoms ([#1062](https://github.com/ImpactDevelopment/ImpactClient/issues/1062))
+- Fixed a crash relating to potion effects in freecam ([#1058](https://github.com/ImpactDevelopment/ImpactClient/issues/1058))
+- Fixed ClickGUI scrolling not working on some systems ([#1061](https://github.com/ImpactDevelopment/ImpactClient/issues/1061))
+- Fixed incorrect press vs release logic in Middle Click Friends
+- Fixed incorrect rendering of potion effects above modules ([#1064](https://github.com/ImpactDevelopment/ImpactClient/issues/1064))
+- Fixed a crash in Search when the shader cannot be created
+- Fixed potential crashes related to ResourceLocations ([#1052](https://github.com/ImpactDevelopment/ImpactClient/issues/1052))
+- Fixed behavior of Jesus on waterlogged blocks e.g. kelp ([#1063](https://github.com/ImpactDevelopment/ImpactClient/issues/1063))
+- Fixed crash when mining redstone ore ([#1121](https://github.com/ImpactDevelopment/ImpactClient/issues/1121))
 
 ## 4.5
 
